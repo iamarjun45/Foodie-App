@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.internshala.foodie.fragment.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/user" />
+
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/profileimg"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/profileroundbg"
+        android:backgroundTint="#FFB6C1"
+        android:fontFamily="@font/josefinbold"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profilephone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/profilename"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/profileroundbg"
+        android:backgroundTint=" 	#DEB887"
+        android:fontFamily="@font/josefinbold"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profilemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/profilephone"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/profileroundbg"
+        android:backgroundTint="#90EE90"
+        android:fontFamily="@font/josefinbold"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment"
+
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profileaddr"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/profilemail"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/profileroundbg"
+        android:backgroundTint="#DDA0DD"
+        android:fontFamily="@font/josefinbold"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/profileprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="invisible"
+
+        >
+
+        <ProgressBar
+            android:id="@+id/proprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress" />
+    </RelativeLayout>
+
+</RelativeLayout>

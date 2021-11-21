@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.internshala.foodie.activity.OrdersCartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ordercarttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#158F0C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="toolbar"
+        app:titleTextColor="#fff" />
+
+    <TextView
+        android:id="@+id/cartorderingfromtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ordercarttoolbar"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/oswaldbold"
+        android:text="Ordering from "
+        android:textColor="#000"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/ordercartseparator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/cartorderingfromtxt"
+        android:layout_margin="2dp"
+        android:background="@color/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ordercartrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ordercartseparator"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/ordercartprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/ordercartprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/ordercartplaceorderbtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/profileroundbg"
+        android:backgroundTint="#17A33B"
+        android:fontFamily="@font/josefinbold"
+        android:text="Place Order (₹250)"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/ordercartplaceorderbtnloading"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/profileroundbg"
+        android:backgroundTint="#17A33B"
+        android:fontFamily="@font/josefinbold"
+        android:textAlignment="center"
+        android:textSize="18sp">
+
+        <ProgressBar
+            android:id="@+id/ordercartprogbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:backgroundTint="#fff" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

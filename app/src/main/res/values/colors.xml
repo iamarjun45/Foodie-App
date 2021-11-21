@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#1C8518</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="shadowcolor">#1C8518</color>
+    <color name="appcolor">#FF8C00</color>
+    <color name="addtocartcolor">#028A0F</color>
+    <color name="hamburgercolor">#fff</color>
+</resources>

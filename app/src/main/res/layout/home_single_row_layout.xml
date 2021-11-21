@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/homellayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+        <ImageView
+            android:id="@+id/foodimg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/profileroundbg"
+            android:backgroundTint="#fff"
+            android:scaleType="centerCrop"
+
+
+            />
+
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+            <TextView
+
+                android:id="@+id/foodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:text="Name of the Food"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/pricelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/foodname">
+
+                <TextView
+                    android:id="@+id/foodprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:alpha="0.8"
+                    android:fontFamily="@font/oswaldbold"
+                    android:padding="8dp"
+                    android:text="Rs. 299"
+                    android:textColor="#dd1f58"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/foodrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/foodprice"
+                    android:layout_margin="4dp"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:text="4.1"
+                    android:textAlignment="center"
+                    android:textColor="#FFB32D"
+                    android:textSize="17sp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <com.like.LikeButton
+                android:id="@+id/heartbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/foodname"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/pricelayout"
+                app:icon_size="12dp"
+                app:icon_type="heart" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

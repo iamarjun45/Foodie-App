@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- regular -->
+    <font
+        android:font="@font/pacifico"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+
+        app:font="@font/pacifico"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <!-- italic -->
+    <font
+        android:font="@font/pacifico"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/pacifico"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+
+    <!-- bold -->
+    <font
+        android:font="@font/kaushan"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+
+        app:font="@font/kaushan"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <!-- italic -->
+    <font
+        android:font="@font/kaushan"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/kaushan"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/caviarbold"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/caviarbold"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/exobold"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/exobold"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/cinzeldecorativebold"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/cinzeldecorativebold"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/sofia"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+
+        app:font="@font/cinzeldecorativebold"
+        app:fontStyle="italic"
+        app:fontWeight="700" />
+
+
+</font-family>

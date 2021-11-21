@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/drawerlogo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+
+        />
+
+    <TextView
+        android:id="@+id/draweruser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawerlogo"
+
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/oswaldbold"
+        android:text="Harsh Vardhan"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/drawerno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/draweruser"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif"
+        android:text="1111111111"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+</RelativeLayout>

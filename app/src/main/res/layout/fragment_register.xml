@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodark">
+
+    <ImageView
+        android:id="@+id/registergoback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="1dp"
+        android:src="@drawable/ic_goback"
+
+        />
+
+    <TextView
+        android:id="@+id/txtregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+
+        android:fontFamily="@font/kaushan"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="70sp" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="460dp"
+        android:layout_below="@id/txtregister"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.35"
+        android:background="@drawable/buttonrad"
+        android:backgroundTint="#525252 " />
+
+
+    <EditText
+        android:id="@+id/edtxtname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/txtregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/ic_name"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="21sp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/edtxtmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxtname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="21sp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/edtxtmobile"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxtmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_mobile_no"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="21sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtxtaddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxtmobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_address"
+        android:hint="Address"
+        android:inputType="text"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="21sp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/edtxtpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxtaddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="21sp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/edtxtconfirmpass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtxtpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_confirmpass"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="21sp"
+
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/regloadingrell"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtxtconfirmpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/buttonrad"
+        android:backgroundTint="#FF8C00"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/regloginprogbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtxtconfirmpass"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="65dp"
+        android:background="@drawable/buttonrad"
+        android:backgroundTint="#FF8C00"
+        android:fontFamily="@font/exobold"
+        android:text="Be a Foodie!"
+
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/reglogininstead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnregister"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/oswaldbold"
+        android:text="@string/Login_instead"
+        android:textAlignment="center"
+        android:textColor="#CCC6C6"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
+

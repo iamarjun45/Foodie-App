@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Foodie</string>
+    <string name="shared_preferences_save">Shared_preferences_file</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_logged_in_home">LoggedInHomeActivity</string>
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+
+    <string name="hello_world">Hello Square World!</string>
+    <string name="Login_instead"><u>Login instead?</u></string>
+    <string name="New_user"><u>Do not have an account? Sign up now!</u></string>
+    <string name="Forgot_Password"><u>Forgot Password</u></string>
+
+    <string name="question1">Q1. What is Foodie and when was it established?</string>
+    <string name="answer1">A1. Foodie is a food delivery company established in 2020 that strives to bring your favourite dishes to your doorstep without you having to step outside. We bring you the best and most scrumptious cuisines out there, so that you never go hungry again. You do need to do anything, just select from a wide variety of restaurants available on our app and choose your favourite dishes and place the order. The food will be delivered at your doorstep. </string>
+    <string name="question2">Q2. What measures is Foodie taking to make the deliveries safer during the pandemic?</string>
+    <string name="answer2">A2. All our Foodie valets are sanitised before being handed the food to be delivered. Also, we run frequent checkups for them to ensure every Foodie valet is healthy and safe. No touch delivery is being given the utmost priority as well. So dont worry and be a FOODIE :)</string>
+    <string name="question3">Q3. Why is Foodie not available in my city?</string>
+    <string name="answer3">A3. Currently Foodie operates in a selected number of cities with the major cities being: Delhi, Mumbai, Hyderabad, Bangalore, Chennai, Dehradun and Pune. We are working on expanding and building our presence in more cities as you read this. So do not worry, we will be coming to your city very soon.</string>
+    <string name="question4">Q4. Is my order returnable?</string>
+    <string name="answer4">A4. At Foodie, we work for giving you the best experience possible with premium packaging and quality cuisines. But if you still feel like returning your order, it can be done within 20 minutes of receiving the order.</string>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.internshala.foodie.activity.ForgotPassActivity">
+
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/kaushan"
+
+
+        android:paddingLeft="50dp"
+        android:text="ForgotPassword"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/txtmsg"
+        android:layout_width="300sp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50sp"
+
+
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/exobold"
+        android:text="Enter the received OTP below:"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16sp"
+
+
+        />
+
+    <RelativeLayout
+
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/txtmsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:alpha="0.2"
+        android:background="@drawable/buttonrad"
+        android:backgroundTint="#525252">
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/otpedtxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:drawableRight="@drawable/ic_mobile_no"
+        android:hint=" OTP"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/otpnewpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpedtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/ic_password"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/otpconfirmpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpnewpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/ic_confirmpass"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/otpbtnsubmit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/otpconfirmpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonrad"
+        android:backgroundTint="#19952E"
+        android:fontFamily="@font/exobold"
+        android:text="SUBMIT"
+
+        android:textColor="#fff"
+        android:textSize="20dp"
+
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/otpprogresslayout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/otpconfirmpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonrad"
+        android:backgroundTint="#19952E"
+        android:textSize="20sp">
+
+        <ProgressBar
+            android:id="@+id/otpprogbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

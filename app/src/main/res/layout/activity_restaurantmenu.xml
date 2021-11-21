@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.internshala.foodie.activity.RestaurantmenuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/resmenutoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#158F0C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="toolbar"
+
+
+        app:titleTextColor="#fff" />
+
+    <RelativeLayout
+        android:id="@+id/txtlayoutresmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resmenutoolbar">
+
+        <TextView
+            android:id="@+id/txtresmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/oswaldbold"
+            android:text="So what do you want to have today?"
+            android:textSize="18sp"
+
+
+            />
+
+        <com.like.LikeButton
+            android:id="@+id/resmenuheart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:icon_size="13dp"
+            app:icon_type="heart" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resmenuseparator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/txtlayoutresmenu"
+        android:background="#D3D3D3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resmenurecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resmenuseparator"
+        android:layout_margin="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/resmenucartbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:backgroundTint="#4418BD"
+        android:src="@drawable/ic_cart"
+        android:visibility="gone"
+        app:fabSize="normal"
+        app:maxImageSize="27dp" />
+
+    <RelativeLayout
+        android:id="@+id/resmenuprogresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/resmenuprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress" />
+    </RelativeLayout>
+</RelativeLayout>

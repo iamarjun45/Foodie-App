@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resmenurl"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="3dp"
+    android:weightSum="6">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+
+        >
+
+        <TextView
+            android:id="@+id/resmenuname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/oswaldbold"
+            android:text="Name of dish"
+            android:textColor="#515151"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/resmenuprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resmenuname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Rs200"
+            android:textColor="#323232" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/resmenubtnaddcart"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+
+        android:layout_margin="20dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/addtocartroundbtn"
+
+        android:text="Add"
+        android:textColor="#fff"
+
+
+        />
+
+</LinearLayout>
+
